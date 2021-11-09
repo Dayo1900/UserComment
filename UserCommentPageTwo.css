@@ -1,0 +1,76 @@
+<?php session_start();?>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>User Comment Section</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="UserComment.css" type="text/css">
+
+<link rel="stylesheet" href="UserComment990px.css" media="(max-width:990px)" type="text/css">
+
+<link rel="stylesheet" href="UserComment630px.css" media="(max-width:630px)" type="text/css">
+
+<link rel="stylesheet" href="UserComment330px.css" media="(max-width:330px)" type="text/css">
+
+
+</head>
+
+<body>
+
+
+<br><br>
+
+<div class="words" style="margin-top:0.8em;">
+<h2 style="text-align:center;"> Posts</h2>
+<?php
+error_reporting(0);     //don't give me error notice, because I may have undefined session variables;
+
+if(empty($_SESSION['one']) && empty($_SESSION['two']))
+{
+    echo "<p style='text-align:center;'>There are no posts yet.</p>";
+}
+
+else {
+    echo $_SESSION['one'];
+    echo $_SESSION['two'];
+}
+?>
+</div>
+
+
+<div class="words">
+    
+<h2 style="text-align:center; color:#002b80; font-weight:bold;"> Side Attraction</h2>
+<a class="display" href="#side_attraction">Click Me! &#128578; </a>
+
+ 
+<div id="side_attraction" class="show">
+    <br><br>
+<p style="font-size:0.9em; font-family:verdana, sans-serif; line-height:1.5; word-wrap:break-word; padding-left:2rem;">
+     You can make a box appear like this one with only HTML and CSS, no Javascript. <br>It's simple and saves computation work for the browser, you can check the code <a style="font-weight:bold;" href="#">here.</a>
+    <br>
+      <br>
+  <a class="display2" href="#">Close </a>
+    </p>
+</div>
+</div>
+
+
+
+<br><br>
+<a class="next" href="UserComment.php"> Back </a>
+
+</body>
+</html>
+
+
+
+
+
