@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>User Comment Section</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="UserComment.css" type="text/css">
+
+<link rel="stylesheet" href="UserComment990px.css" media="(max-width:990px)" type="text/css">
+
+<link rel="stylesheet" href="UserComment630px.css" media="(max-width:630px)" type="text/css">
+
+<link rel="stylesheet" href="UserComment330px.css" media="(max-width:330px)" type="text/css">
+
+<style>
+* { font-family: Garamond sans-serif;}
+
+body
+{
+   background-color:#F0F8FF;
+   width:100vw; 
+}
+.words 
+{
+  width:55%; 
+  height:auto;
+  padding:4em 2em 2em 2em;
+  display:block; 
+  margin:2rem auto; 
+  box-sizing:content-box;
+  box-shadow:1px 1px 1px 1px #999999;
+  background-color:white;
+}
+.display
+{   text-decoration:underline;
+    color:white;
+    font-weight:bold;
+    margin:auto;
+   display:grid;
+  align-items:center;
+  background-color:#ff884d;
+  font-size:1.5rem;
+  text-align:center;  
+  width:20%;
+    padding:0.5em 1em;
+}
+.display2
+{   
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    margin:auto;
+   display:grid;
+  align-items:center;
+  background-color:#ff884d;
+  font-size:1.05rem;
+  text-align:center;  
+  width:20%;
+    padding:0.25em 0.5em;
+}
+#side_attraction
+{
+    visibility:hidden;
+}
+        
+#side_attraction:target
+{
+    visibility:visible;
+}
+ .show
+{
+    width:auto;    
+    height:1px;
+    transition: height 2s;
+}      
+.show:target
+    {
+        height: auto;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="words">
+    
+<h2 style="text-align:center; color:#002b80; font-weight:bold;"> Side Attraction</h2>
+<a class="display" href="#side_attraction">Click Me! &#128578; </a>
+
+ 
+<div id="side_attraction" class="show">
+    <br><br>
+<p style="font-size:0.9em; font-family:verdana, sans-serif; line-height:1.5; word-wrap:break-word; padding-left:2rem;">
+     You can make a box appear like this one with only HTML and CSS, no Javascript. <br>It's simple and saves computation work for the browser, you can check the code <a style="font-weight:bold;" href="#">here.</a>
+    <br>
+      <br>
+  <a class="display2" href="#">Close </a>
+    </p>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
 
